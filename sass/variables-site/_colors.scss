@@ -1,17 +1,29 @@
-$color__background-body: #fff;
-$color__background-screen: #f1f1f1;
-$color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
-$color__background-pre: #eee;
+// ltbp-wp colors
+
+$c-accent: #257;
+$c-white: #fdfdfd;
+$c-grey-light: #e5e5e5;
+$c-grey: #959595;
+$c-grey-dark: #454545;
+$c-black: #050505;
+
+
+// _s colors
+
+$color__background-body: $c-white;
+$color__background-screen: $c-white;
+$color__background-hr: $c-grey-light;
+$color__background-button: $c-accent;
+$color__background-pre: $c-grey-light;
 $color__background-ins: #fff9c0;
 
 $color__text-screen: #21759b;
-$color__text-input: #666;
-$color__text-input-focus: #111;
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
-$color__text-main: #404040;
+$color__text-input: $c-grey-dark;
+$color__text-input-focus: $c-black;
+$color__link: $c-accent;
+$color__link-visited: $c-accent;
+$color__link-hover: lighten($c-accent, 10%);
+$color__text-main: $c-grey-dark;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
