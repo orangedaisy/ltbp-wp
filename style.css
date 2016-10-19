@@ -367,6 +367,28 @@ input[type="submit"] {
     border-color: #aaa #bbb #bbb;
     box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
+.c-button {
+  display: inline-block;
+  letter-spacing: .125em;
+  opacity: .85;
+  text-decoration: none;
+  transition: opacity 250ms;
+  border: .063em solid transparent;
+  padding: .75em 1.5em;
+  text-transform: uppercase; }
+  .c-button:hover, .c-button:focus {
+    opacity: 1; }
+  .c-button:active {
+    opacity: .7; }
+  .c-button--large {
+    font-size: 1.25em; }
+  .c-button--primary {
+    border-color: #257;
+    color: #257; }
+  .c-button--white {
+    border-color: #fdfdfd;
+    color: #fdfdfd; }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],

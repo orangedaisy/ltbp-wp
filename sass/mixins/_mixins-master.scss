@@ -22,3 +22,21 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+// Base mixin for our buttons and text links
+@mixin link-base() {
+  display: inline-block;
+  letter-spacing: .125em;
+  opacity: .85;
+  text-decoration: none;
+  transition: opacity 250ms;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: .7;
+  }
+}
