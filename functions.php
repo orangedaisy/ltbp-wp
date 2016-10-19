@@ -149,9 +149,24 @@ function cta_button_shortcode( $atts ) {
       'color' => 'primary',
       'size' => 'medium',
       'page' => '',
+      'title' => '',
       'text' => 'Button'
     ),
     $atts
   ));
-  return '<p><a class="c-button c-button--' . $color . ' c-button--' . $size . '" href="/' . $page . '">' . $text . '</a></p>';
+  return '<p><a class="c-button c-button--' . $color . ' c-button--' . $size . '" href="/' . $page . '" title="' . $title . '">' . $text . '</a></p>';
+}
+
+add_shortcode( 'special_link', 'special_link_shortcode' );
+function special_link_shortcode( $atts ) {
+  extract( shortcode_atts(
+    array(
+      'color' => 'primary',
+      'page' => '',
+      'title' => '',
+      'text' => 'Link'
+    ),
+    $atts
+  ));
+  return '<p><a class="c-link c-link--' . $color . '" href="/' . $page . '" title="' . $title . '">' . $text . '</a></p>';
 }
