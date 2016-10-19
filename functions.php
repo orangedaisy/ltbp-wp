@@ -138,3 +138,20 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Custom shortcodes
+ */
+add_shortcode( 'cta_button', 'cta_button_shortcode' );
+function cta_button_shortcode( $atts ) {
+  extract( shortcode_atts(
+    array(
+      'color' => 'primary',
+      'size' => 'medium',
+      'page' => '',
+      'text' => 'Button'
+    ),
+    $atts
+  ));
+  return '<p><a class="c-button c-button--' . $color . ' c-button--' . $size . '" href="/' . $page . '">' . $text . '</a></p>';
+}
