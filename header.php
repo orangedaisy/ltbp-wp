@@ -24,7 +24,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ltbp-wp' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="o-site-header site-header" role="banner">
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
