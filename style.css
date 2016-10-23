@@ -460,6 +460,17 @@ a {
   a:hover, a:active {
     outline: 0; }
 
+.c-link {
+  display: inline-block;
+  letter-spacing: .125em;
+  opacity: .85;
+  text-decoration: none;
+  transition: opacity 250ms; }
+  .c-link:hover, .c-link:focus {
+    opacity: 1; }
+  .c-link:active {
+    opacity: .7; }
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/

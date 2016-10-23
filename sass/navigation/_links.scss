@@ -17,3 +17,7 @@ a {
 		outline: 0;
 	}
 }
+
+.c-link {
+  @include link-base();
+}
