@@ -1,0 +1,18 @@
+// ----------
+//
+// o-row
+//
+// styles for our main 'row' object. this is a wrapper that we can use to
+// restrict the width of various bits of content.
+//
+// ----------
+
+.o-row {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 0 1rem;
+
+  @media screen and (min-width: 60.063rem) {
+    padding: 0;
+  }
+}

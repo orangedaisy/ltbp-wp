@@ -40,6 +40,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Objects (LTB)
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -720,5 +721,16 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# Objects
+--------------------------------------------------------------*/
+.o-row {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 0 1rem; }
+  @media screen and (min-width: 60.063rem) {
+    .o-row {
+      padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */

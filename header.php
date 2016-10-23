@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ltbp-wp' ); ?></a>
 
 	<header id="masthead" class="o-site-header site-header" role="banner">
-		<nav id="site-navigation" class="c-site-nav main-navigation" role="navigation">
+		<nav id="site-navigation" class="o-row c-site-nav" role="navigation">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a class="c-site-nav__link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
