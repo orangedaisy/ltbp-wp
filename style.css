@@ -41,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 # Objects (LTB)
+# Components (LTB)
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -748,5 +749,40 @@ object {
   @media screen and (min-width: 60.063rem) {
     .o-row {
       padding: 0; } }
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+.c-site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem .5rem; }
+  .c-site-nav .site-title {
+    font-size: 100%; }
+  .c-site-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .c-site-nav li + li {
+    margin-left: .5rem; }
+  .c-site-nav a {
+    border: .063em solid transparent;
+    color: #257;
+    letter-spacing: .125em;
+    opacity: .85;
+    padding: .5em 1em;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .c-site-nav a:hover, .c-site-nav a:focus {
+      opacity: 1; }
+    .c-site-nav a:active {
+      opacity: .7; }
+  .c-site-nav .current_page_item a {
+    border-color: #257;
+    font-weight: 300; }
 
 /*# sourceMappingURL=style.css.map */

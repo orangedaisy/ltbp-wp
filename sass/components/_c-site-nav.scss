@@ -1,0 +1,59 @@
+// ----------
+//
+// c-site-nav
+//
+// primary site nav styles
+//
+// ----------
+
+.c-site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem .5rem;
+
+  // unfortunately, due to the unique way wordpress is stupid, we have to do a
+  // bit of nesting here. forgive me.
+  .site-title {
+    font-size: 100%;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li + li {
+    margin-left: .5rem;
+  }
+
+  a {
+    border: .063em solid transparent;
+    color: $c-accent;
+    letter-spacing: .125em;
+    opacity: .85;
+    padding: .5em 1em;
+    text: {
+      decoration: none;
+      transform: uppercase;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: .7;
+    }
+  }
+
+  .current_page_item a {
+    border-color: $c-accent;
+    font-weight: 300;
+  }
+}
