@@ -18,6 +18,26 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Corben:400,700|Source+Sans+Pro:300,400">
 
 <?php wp_head(); ?>
+
+<?php if ( is_front_page() ) : ?>
+  <style>
+    <?php $background = wp_get_attachment_image_src( get_post_thumbnail_id( $page->ID ), 'full' );?>
+    body.home {
+      background-attachment: fixed;
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(34, 85, 119, .25),
+          rgba(34, 85, 119, .25)
+        ),
+        url('<?php echo $background[0]; ?>');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+<?php endif; ?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -27,7 +47,7 @@
 	<header id="masthead" class="o-site-header site-header" role="banner">
 		<nav id="site-navigation" class="o-row c-site-nav" role="navigation">
 			<?php
-			if ( is_front_page() && is_home() ) : ?>
+			if ( is_front_page() ) : ?>
         <div>
           <h1 class="screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
           <a class="c-site-nav__go-home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="/wp-content/uploads/ltb-logo-white-2.png" alt="LTB Photography"></a>
