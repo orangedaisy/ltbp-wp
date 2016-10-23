@@ -763,6 +763,7 @@ body:not(.home) .o-site-header {
   padding: 1rem .5rem; }
   .c-site-nav .site-title {
     font-size: 100%;
+    font-weight: 400;
     margin: 0; }
   .c-site-nav ul {
     display: flex;
