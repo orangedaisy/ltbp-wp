@@ -331,6 +331,9 @@ figure {
   margin: 1em 0;
   /* Extra wide images within figure tags don't overflow the content area. */ }
 
+.site-content {
+  flex: 1; }
+
 table {
   margin: 0 0 1.5em;
   width: 100%; }
@@ -738,6 +741,9 @@ object {
     justify-content: space-between; }
   .g-grid--middle {
     align-items: center; }
+  .g-grid--sticky-footer {
+    min-height: 100vh;
+    flex-direction: column; }
 
 /*--------------------------------------------------------------
 # Objects

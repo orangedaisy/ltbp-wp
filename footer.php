@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="o-site-footer" role="contentinfo">
     <div class="o-row">
-      <p>Southern and classy: like a mason jar used for decoration, not for drinking.</p>
+      <p>Southern and classy &mdash; like a mason jar used for decoration, not for drinking.</p>
       <p>&copy; 2016 {LTB} photography</p>
     </div>
 	</footer><!-- #colophon -->

@@ -30,4 +30,9 @@
   &--middle {
     align-items: center;
   }
+
+  &--sticky-footer {
+    min-height: 100vh;
+    flex-direction: column;
+  }
 }
