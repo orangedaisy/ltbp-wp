@@ -9,7 +9,7 @@
 .c-site-nav {
   display: flex;
   align-items: center;
-  //justify-content: space-between;
+  justify-content: space-between;
   padding: 1rem .5rem;
 
   // unfortunately, due to the unique way wordpress is stupid, we have to do a
@@ -65,7 +65,7 @@
     height: auto;
     margin-right: 1rem;
     max-width: 12rem;
-    //vertical-align: middle;
+    vertical-align: middle;
   }
 
   .current_page_item a {

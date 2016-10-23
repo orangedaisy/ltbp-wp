@@ -773,6 +773,7 @@ body:not(.home) .o-site-header {
 .c-site-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 1rem .5rem; }
   .c-site-nav .site-title {
     font-size: 100%;
@@ -805,7 +806,8 @@ body:not(.home) .o-site-header {
     display: inline-block;
     height: auto;
     margin-right: 1rem;
-    max-width: 12rem; }
+    max-width: 12rem;
+    vertical-align: middle; }
   .c-site-nav .current_page_item a {
     border-color: #257;
     font-weight: 300; }
