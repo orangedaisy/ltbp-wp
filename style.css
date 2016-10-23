@@ -759,7 +759,6 @@ body:not(.home) .o-site-header {
 .c-site-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 1rem .5rem; }
   .c-site-nav .site-title {
     font-size: 100%;
@@ -774,7 +773,7 @@ body:not(.home) .o-site-header {
     padding: 0; }
   .c-site-nav li + li {
     margin-left: .5rem; }
-  .c-site-nav a {
+  .c-site-nav a:not(.c-site-nav__go-home) {
     border: .063em solid transparent;
     color: #257;
     letter-spacing: .125em;
@@ -782,10 +781,17 @@ body:not(.home) .o-site-header {
     padding: .5em 1em;
     text-decoration: none;
     text-transform: uppercase; }
-    .c-site-nav a:hover, .c-site-nav a:focus {
+    .c-site-nav a:not(.c-site-nav__go-home):hover, .c-site-nav a:not(.c-site-nav__go-home):focus {
       opacity: 1; }
-    .c-site-nav a:active {
+    .c-site-nav a:not(.c-site-nav__go-home):active {
       opacity: .7; }
+    body.home .c-site-nav a:not(.c-site-nav__go-home) {
+      color: #fdfdfd; }
+  .c-site-nav__go-home img {
+    display: inline-block;
+    height: auto;
+    margin-right: 1rem;
+    max-width: 12rem; }
   .c-site-nav .current_page_item a {
     border-color: #257;
     font-weight: 300; }

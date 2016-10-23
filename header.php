@@ -28,9 +28,10 @@
 		<nav id="site-navigation" class="o-row c-site-nav" role="navigation">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a class="c-site-nav__link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
+        <a class="c-site-nav__go-home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="/wp-content/uploads/ltb-logo-white-2.png" alt="LTB Photography"></a>
 			<?php else : ?>
-				<a class="c-site-nav__link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+        <a class="c-site-nav__go-home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="/wp-content/uploads/ltb-logo.png" alt="LTB Photography"></a>
 			<?php
 			endif; ?>
 
