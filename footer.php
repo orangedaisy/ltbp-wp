@@ -13,12 +13,11 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ltbp-wp' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'ltbp-wp' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ltbp-wp' ), 'ltbp-wp', '<a href="http://www.orangedaisy.co" rel="designer">Robert Showalter</a>' ); ?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="o-site-footer" role="contentinfo">
+    <div class="o-row">
+      <p>Southern and classy: like a mason jar used for decoration, not for drinking.</p>
+      <p>&copy; 2016 {LTB} photography</p>
+    </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

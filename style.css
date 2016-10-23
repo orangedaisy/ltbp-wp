@@ -753,6 +753,13 @@ object {
 body:not(.home) .o-site-header {
   background-color: #e5e5e5; }
 
+.o-site-footer {
+  background-color: #257;
+  color: #fdfdfd;
+  padding: 3.375rem 0; }
+  .o-site-footer p {
+    margin-bottom: 1rem; }
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/

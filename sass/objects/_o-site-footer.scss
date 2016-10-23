@@ -1,0 +1,17 @@
+// ----------
+//
+// o-site-footer
+//
+// site footer styles
+//
+// ----------
+
+.o-site-footer {
+  background-color: $c-accent;
+  color: $c-white;
+  padding: 3.375rem 0;
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
