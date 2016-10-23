@@ -1,9 +1,6 @@
 a {
 	color: $color__link;
 
-	&:visited {
-		color: $color__link-visited;
-	}
 	&:hover,
 	&:focus,
 	&:active {
@@ -20,4 +17,13 @@ a {
 
 .c-link {
   @include link-base();
+
+  &--white {
+    color: $c-white;
+
+    &:hover,
+    &:focus {
+      color: $c-white;
+    }
+  }
 }

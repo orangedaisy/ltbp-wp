@@ -237,6 +237,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #257;
   font-family: "Corben", serif;
   font-weight: 400; }
+  body.home h1, body.home h2, body.home h3, body.home h4, body.home h5, body.home h6 {
+    color: #fdfdfd; }
 
 p {
   margin-bottom: 1em; }
@@ -398,6 +400,8 @@ input[type="submit"] {
   .c-button--white {
     border-color: #fdfdfd;
     color: #fdfdfd; }
+    .c-button--white:hover, .c-button--white:focus {
+      color: #fdfdfd; }
 
 input[type="text"],
 input[type="email"],
@@ -451,8 +455,6 @@ textarea {
 --------------------------------------------------------------*/
 a {
   color: #257; }
-  a:visited {
-    color: #257; }
   a:hover, a:focus, a:active {
     color: #2d719f; }
   a:focus {
@@ -470,6 +472,10 @@ a {
     opacity: 1; }
   .c-link:active {
     opacity: .7; }
+  .c-link--white {
+    color: #fdfdfd; }
+    .c-link--white:hover, .c-link--white:focus {
+      color: #fdfdfd; }
 
 /*--------------------------------------------------------------
 ## Menus

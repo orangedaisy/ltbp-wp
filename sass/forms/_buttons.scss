@@ -49,5 +49,10 @@ input[type="submit"] {
   &--white {
     border-color: $c-white;
     color: $c-white;
+
+    &:hover,
+    &:focus {
+      color: $c-white;
+    }
   }
 }
