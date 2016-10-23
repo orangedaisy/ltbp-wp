@@ -34,7 +34,7 @@
 			<?php
 			endif; ?>
 
-			<button class="c-button c-button--primary c-site-nav__toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ltbp-wp' ); ?></button>
+			<button class="c-button c-button--primary c-button--small c-site-nav__toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'ltbp-wp' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
