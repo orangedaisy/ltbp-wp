@@ -1,0 +1,33 @@
+// ----------
+//
+// g-grid
+//
+// our attempt at creating a flexbox grid-system thing that only does exactly
+// what we need it to.
+//
+// ----------
+
+.g-grid {
+  display: flex;
+
+  &--left {
+    // this is the flexbox default, but we'll leave it in here just in case.
+    justify-content: flex-start;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  &--justify {
+    justify-content: space-between;
+  }
+
+  &--middle {
+    align-items: center;
+  }
+}
