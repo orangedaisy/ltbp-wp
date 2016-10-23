@@ -236,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1em; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -763,8 +763,6 @@ body:not(.home) .o-site-header {
   background-color: #257;
   color: #fdfdfd;
   padding: 3.375rem 0; }
-  .o-site-footer p {
-    margin-bottom: 1rem; }
 
 /*--------------------------------------------------------------
 # Components
