@@ -1,0 +1,11 @@
+// ----------
+//
+// o-site-header
+//
+// styles for our primary site header
+//
+// ----------
+
+body:not(.home) .o-site-header {
+  background-color: $c-grey-light;
+}

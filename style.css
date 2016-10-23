@@ -750,6 +750,9 @@ object {
     .o-row {
       padding: 0; } }
 
+body:not(.home) .o-site-header {
+  background-color: #e5e5e5; }
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -759,7 +762,8 @@ object {
   justify-content: space-between;
   padding: 1rem .5rem; }
   .c-site-nav .site-title {
-    font-size: 100%; }
+    font-size: 100%;
+    margin: 0; }
   .c-site-nav ul {
     display: flex;
     align-items: center;
