@@ -164,6 +164,27 @@ function create_post_type() {
       'menu_icon' => 'dashicons-camera',
     )
   );
+
+  register_post_type( 'testimonials',
+    array(
+      'labels' => array(
+        'name' => __( 'Testimonials' ),
+        'singular_name' => __( 'Testimonial' ),
+        'add_new_item' => __(' Add New Testimonial' ),
+        'new_item' => __( 'New Testimonial' ),
+        'edit_item' => __( 'Edit Testimonial' ),
+        'view_item' => __( 'View Testimonial' ),
+        'search_items' => __( 'Search Testimonials' ),
+        'not_found' => __( 'No testimonials found' ),
+        'not_found_in_trash' => __( 'No testimonials found in trash' ),
+        'all_items' => __( 'All Testimonials' ),
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'menu_position' => 5,
+      'menu_icon' => 'dashicons-megaphone',
+    )
+  );
 }
 
 /**
