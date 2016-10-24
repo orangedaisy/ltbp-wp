@@ -38,6 +38,7 @@
   a:not(.c-site-nav__go-home) {
     border: .063em solid transparent;
     color: $c-accent;
+    font-weight: 300;
     letter-spacing: .125em;
     opacity: .85;
     padding: .5em 1em;
@@ -70,6 +71,6 @@
 
   .current_page_item a {
     border-color: $c-accent;
-    font-weight: 300;
+    font-weight: 400;
   }
 }

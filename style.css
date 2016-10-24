@@ -821,6 +821,7 @@ body:not(.home) .o-site-header {
   .c-site-nav a:not(.c-site-nav__go-home) {
     border: .063em solid transparent;
     color: #257;
+    font-weight: 300;
     letter-spacing: .125em;
     opacity: .85;
     padding: .5em 1em;
@@ -840,7 +841,7 @@ body:not(.home) .o-site-header {
     vertical-align: middle; }
   .c-site-nav .current_page_item a {
     border-color: #257;
-    font-weight: 300; }
+    font-weight: 400; }
 
 /*--------------------------------------------------------------
 # Scopes
