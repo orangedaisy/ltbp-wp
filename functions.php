@@ -140,6 +140,33 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
+ * Custom post types
+ */
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+  register_post_type( 'investments',
+    array(
+      'labels' => array(
+        'name' => __( 'Investments' ),
+        'singular_name' => __( 'Investment' ),
+        'add_new_item' => __(' Add New Investment' ),
+        'new_item' => __( 'New Investment' ),
+        'edit_item' => __( 'Edit Investment' ),
+        'view_item' => __( 'View Investment' ),
+        'search_items' => __( 'Search Investments' ),
+        'not_found' => __( 'No investments found' ),
+        'not_found_in_trash' => __( 'No investments found in trash' ),
+        'all_items' => __( 'All Investments' ),
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'menu_position' => 5,
+      'menu_icon' => 'dashicons-camera',
+    )
+  );
+}
+
+/**
  * Custom shortcodes
  */
 add_shortcode( 'cta_button', 'cta_button_shortcode' );
