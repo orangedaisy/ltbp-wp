@@ -42,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 # Objects (LTB)
 # Components (LTB)
+# Scopes (LTB)
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -338,6 +339,15 @@ figure {
 
 .site-content {
   flex: 1; }
+  body.home .site-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+body.home .site-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 table {
   margin: 0 0 1.5em;
@@ -831,5 +841,14 @@ body:not(.home) .o-site-header {
   .c-site-nav .current_page_item a {
     border-color: #257;
     font-weight: 300; }
+
+/*--------------------------------------------------------------
+# Scopes
+--------------------------------------------------------------*/
+.s-homepage h1 {
+  font-size: 2.25rem; }
+  @media screen and (min-width: 48rem) {
+    .s-homepage h1 {
+      font-size: 3.375rem; } }
 
 /*# sourceMappingURL=style.css.map */

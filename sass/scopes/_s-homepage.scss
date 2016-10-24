@@ -1,0 +1,18 @@
+// ----------
+//
+// s-homepage
+//
+// scope for the homepage wysiwyg elements we can't directly apply classes to
+//
+// ----------
+
+.s-homepage {
+
+  h1 {
+    font-size: 2.25rem;
+
+    @media screen and (min-width: 48rem) {
+      font-size: 3.375rem;
+    }
+  }
+}
