@@ -50,10 +50,11 @@
 			if ( is_front_page() ) : ?>
         <div>
           <h1 class="screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
-          <a class="c-site-nav__go-home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="/wp-content/uploads/ltb-logo-white-2.png" alt="LTB Photography"></a>
+          <a class="c-site-nav__go-home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_bloginfo('template_directory') ?>/images/ltb-logo--white-2.png" alt="LTB Photography"></a>
         </div>
 			<?php else : ?>
-        <a class="c-site-nav__go-home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="/wp-content/uploads/ltb-logo.png" alt="LTB Photography"></a>
+        <a class="c-site-nav__go-home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_bloginfo('template_directory') ?>/images/ltb-logo.png" alt="LTB Photography"></a>
+        <!--<a class="c-site-nav__go-home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="/wp-content/uploads/ltb-logo.png" alt="LTB Photography"></a>-->
 			<?php
 			endif; ?>
 
