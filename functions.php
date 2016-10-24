@@ -218,3 +218,21 @@ function special_link_shortcode( $atts ) {
   ));
   return '<p><a class="c-link c-link--' . $color . '" href="/' . $page . '" title="' . $title . '">' . $text . '</a></p>';
 }
+
+/**
+ * Customize login page
+ */
+function custom_login_logo() {
+  echo '<style>.login h1 a { background: url('.get_bloginfo('template_directory').'/images/ltb-logo.png) center / contain no-repeat !important; margin: 0 0 1.5rem; width: auto; }</style>';
+}
+add_action('login_head', 'custom_login_logo');
+
+function change_wp_login_url() {
+    return get_bloginfo('url');
+}
+add_filter('login_headerurl', 'change_wp_login_url');
+
+function change_wp_login_title() {
+    return get_option('blogname');
+}
+add_filter('login_headertitle', 'change_wp_login_title');
