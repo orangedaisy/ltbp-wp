@@ -10,4 +10,9 @@
   background-color: $c-accent;
   color: $c-white;
   padding: 3.375rem 0;
+
+  body.home & {
+    background-color: transparent;
+    padding: 0;
+  }
 }

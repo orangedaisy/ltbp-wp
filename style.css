@@ -783,6 +783,9 @@ body:not(.home) .o-site-header {
   background-color: #257;
   color: #fdfdfd;
   padding: 3.375rem 0; }
+  body.home .o-site-footer {
+    background-color: transparent;
+    padding: 0; }
 
 /*--------------------------------------------------------------
 # Components
