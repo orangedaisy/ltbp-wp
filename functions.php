@@ -223,7 +223,7 @@ function special_link_shortcode( $atts ) {
  * Customize login page
  */
 function custom_login_logo() {
-  echo '<style>.login h1 a { background: url('.get_bloginfo('template_directory').'/images/ltb-logo.png) center / contain no-repeat !important; margin: 0 0 1.5rem; width: auto; }</style>';
+  echo '<style>body { background-image: radial-gradient(circle at bottom left, #035, #257); } .login h1 a { background: url('.get_bloginfo('template_directory').'/images/ltb-logo--white-2.png) center / contain no-repeat !important; margin: 0 0 1.5rem; width: auto; } .login #backtoblog a, .login #nav a { color: #8ac; } .login #backtoblog a:hover, .login #nav a:hover { color: #58a; } .login #backtoblog a:active, .login #nav a:active { color: #479; }</style>';
 }
 add_action('login_head', 'custom_login_logo');
 
