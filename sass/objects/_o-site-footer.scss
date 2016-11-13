@@ -9,10 +9,12 @@
 .o-site-footer {
   background-color: $c-accent;
   color: $c-white;
+  letter-spacing: .063em;
   padding: 3.375rem 0;
 
   body.home & {
     background-color: transparent;
     padding: 0;
+    text-shadow: 0 0 .063em $c-black;
   }
 }

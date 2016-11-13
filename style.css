@@ -800,10 +800,12 @@ body:not(.home) .o-site-header {
 .o-site-footer {
   background-color: #257;
   color: #fdfdfd;
+  letter-spacing: .063em;
   padding: 3.375rem 0; }
   body.home .o-site-footer {
     background-color: transparent;
-    padding: 0; }
+    padding: 0;
+    text-shadow: 0 0 0.063em #050505; }
 
 /*--------------------------------------------------------------
 # Components
