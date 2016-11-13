@@ -30,12 +30,14 @@ get_header(); ?>
           <div class="o-row g-grid g-grid--columns">
             <div class="c-investment-block__content">
               <h1 class="c-investment-block__name"><?php the_field('investment_name'); ?></h1>
-              <div class="c-investment-block__overview"><?php the_field('investment_overview'); ?></div>
-              <p>
-                <a class="c-link c-link--white" href="<?php esc_url( get_permalink() ); ?>" title="<?php the_field('investment_name'); ?>">
-                  Read More
-                </a>
-              </p>
+              <div class="c-investment-block__overview">
+                <?php the_field('investment_overview'); ?>
+                <p>
+                  <a class="c-link c-link--white" href="<?php esc_url( get_permalink() ); ?>" title="<?php the_field('investment_name'); ?>">
+                    Read More
+                  </a>
+                </p>
+              </div>
               <p>
                 <a class="c-button c-button--white" href="/contact" title="Book a Session">Book a Session</a>
               </p>
