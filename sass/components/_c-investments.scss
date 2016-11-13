@@ -1,0 +1,64 @@
+// ----------
+//
+// c-investments
+//
+// styles for our investments displays, both in the invesmtents list,
+// and individual investments
+//
+// ----------
+
+.c-investment-block {
+  background: {
+    attachment: fixed;
+    position: center;
+    repeat: no-repeat;
+    size: cover;
+  }
+  color: $c-white;
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+  padding: 1.5rem 0;
+
+  &__content {
+    letter-spacing: .063em;
+    text-shadow: 0 0 .063em $c-black;
+
+    @media screen and (min-width: 48rem) {
+      width: 50%;
+    }
+
+    > *:first-child {
+      margin-top: 0;
+    }
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__name {
+    color: $c-white;
+    line-height: 1.125;
+    text-shadow: 0 0 .063em $c-black;
+
+    @media screen and (min-width: 48rem) {
+      font-size: 3.375rem;
+    }
+  }
+
+  &__overview {
+    @media screen and (min-width: 48rem) {
+      font: {
+        size: 1.25rem;
+        weight: 300;
+      }
+    }
+  }
+
+  @media screen and (min-width: 48rem) {
+    &:nth-of-type(even) .g-grid--columns {
+      align-items: flex-end;
+    }
+  }
+}

@@ -761,6 +761,8 @@ object {
 --------------------------------------------------------------*/
 .g-grid {
   display: flex; }
+  .g-grid--columns {
+    flex-direction: column; }
   .g-grid--left {
     justify-content: flex-start; }
   .g-grid--center {
@@ -852,7 +854,32 @@ body:not(.home) .o-site-header {
   color: #fdfdfd;
   display: flex;
   align-items: center;
-  height: 90vh; }
+  min-height: 90vh;
+  padding: 1.5rem 0; }
+  .c-investment-block__content {
+    letter-spacing: .063em;
+    text-shadow: 0 0 0.063em #050505; }
+    @media screen and (min-width: 48rem) {
+      .c-investment-block__content {
+        width: 50%; } }
+    .c-investment-block__content > *:first-child {
+      margin-top: 0; }
+    .c-investment-block__content > *:last-child {
+      margin-bottom: 0; }
+  .c-investment-block__name {
+    color: #fdfdfd;
+    line-height: 1.125;
+    text-shadow: 0 0 0.063em #050505; }
+    @media screen and (min-width: 48rem) {
+      .c-investment-block__name {
+        font-size: 3.375rem; } }
+  @media screen and (min-width: 48rem) {
+    .c-investment-block__overview {
+      font-size: 1.25rem;
+      font-weight: 300; } }
+  @media screen and (min-width: 48rem) {
+    .c-investment-block:nth-of-type(even) .g-grid--columns {
+      align-items: flex-end; } }
 
 /*--------------------------------------------------------------
 # Scopes

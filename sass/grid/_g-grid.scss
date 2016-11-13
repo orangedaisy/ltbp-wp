@@ -10,6 +10,10 @@
 .g-grid {
   display: flex;
 
+  &--columns {
+    flex-direction: column;
+  }
+
   &--left {
     // this is the flexbox default, but we'll leave it in here just in case.
     justify-content: flex-start;
