@@ -19,6 +19,7 @@ a {
   @include link-base();
 
   &--white {
+    border-bottom-color: $c-white;
     color: $c-white;
 
     &:hover,

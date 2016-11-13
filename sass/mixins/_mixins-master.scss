@@ -25,9 +25,11 @@
 
 // Base mixin for our buttons and text links
 @mixin link-base() {
+  border-bottom: .063em solid $c-accent;
   display: inline-block;
   letter-spacing: .125em;
   opacity: .85;
+  padding: .125em 0;
   text-decoration: none;
   transition: opacity 250ms;
 

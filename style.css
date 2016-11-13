@@ -388,9 +388,11 @@ input[type="submit"] {
     box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 .c-button {
+  border-bottom: 0.063em solid #257;
   display: inline-block;
   letter-spacing: .125em;
   opacity: .85;
+  padding: .125em 0;
   text-decoration: none;
   transition: opacity 250ms;
   border: .063em solid transparent;
@@ -473,9 +475,11 @@ a {
     outline: 0; }
 
 .c-link {
+  border-bottom: 0.063em solid #257;
   display: inline-block;
   letter-spacing: .125em;
   opacity: .85;
+  padding: .125em 0;
   text-decoration: none;
   transition: opacity 250ms; }
   .c-link:hover, .c-link:focus {
@@ -483,6 +487,7 @@ a {
   .c-link:active {
     opacity: .7; }
   .c-link--white {
+    border-bottom-color: #fdfdfd;
     color: #fdfdfd; }
     .c-link--white:hover, .c-link--white:focus {
       color: #fdfdfd; }
