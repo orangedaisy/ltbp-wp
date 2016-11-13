@@ -27,8 +27,8 @@
       background-image:
         linear-gradient(
           to bottom,
-          rgba(34, 85, 119, .25),
-          rgba(34, 85, 119, .25)
+          rgba(34, 85, 119, .35),
+          rgba(34, 85, 119, .35)
         ),
         url('<?php echo $background[0]; ?>');
       background-position: center;

@@ -22,8 +22,8 @@ get_header(); ?>
                                       background-image:
                                         linear-gradient(
                                           to bottom,
-                                          rgba(34,85,119,.25),
-                                          rgba(34,85,119,.25)
+                                          rgba(34,85,119,.6),
+                                          rgba(34,85,119,.6)
                                         ),
                                         url(<?php the_field('investment_image'); ?>);">
 
