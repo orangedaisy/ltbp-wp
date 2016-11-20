@@ -21,9 +21,9 @@
                       rgba(34,85,119,.6)
                     ),
                     url(<?php the_field('investment_image'); ?>);">
-      <div class="o-row">
-        <h1><?php the_field( 'investment_name' ); ?></h1>
-        <div><?php the_field( 'investment_overview' ); ?></div>
+      <div class="o-row c-investment__header-content">
+        <h1 class="c-investment__name"><?php the_field( 'investment_name' ); ?></h1>
+        <div class="c-investment__overview"><?php the_field( 'investment_overview' ); ?></div>
       </div>
     </header><!-- .c-investment__header -->
 

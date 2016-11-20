@@ -7,6 +7,62 @@
 //
 // ----------
 
+.c-investment {
+
+  &__header {
+    background: {
+      attachment: fixed;
+      position: center bottom;
+      repeat: no-repeat;
+      size: cover;
+    }
+  }
+
+  &__header-content {
+    padding: {
+      top: 2.25rem;
+      bottom: 2.25rem;
+    }
+  }
+
+  &__name {
+    color: $c-white;
+    line-height: 1.125;
+    margin-top: 0;
+    text-shadow: 0 0 .063em $c-black;
+
+    @media screen and (min-width: 48rem) {
+      font-size: 3.375rem;
+      text-align: center;
+    }
+  }
+
+  &__overview {
+    color: $c-white;
+    margin: 0 auto;
+    text-shadow: 0 0 .063em $c-black;
+
+    @media screen and (min-width: 48rem) {
+      font: {
+        size: 1.25rem;
+        weight: 300;
+      }
+      width: 75%;
+    }
+
+    > p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__description {
+    padding: {
+      top: 2.25rem;
+      bottom: 2.25rem;
+    }
+  }
+}
+
 .c-investment-block {
   background: {
     attachment: fixed;
