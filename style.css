@@ -930,4 +930,30 @@ body:not(.home) .o-site-header {
     .s-homepage h1 {
       font-size: 3.375rem; } }
 
+.s-investment__navigation {
+  background-color: #e5e5e5;
+  padding: 1.5rem 0; }
+  .s-investment__navigation .post-navigation {
+    margin-bottom: 0; }
+    .s-investment__navigation .post-navigation .nav-previous a,
+    .s-investment__navigation .post-navigation .nav-next a {
+      border-bottom: 0.063em solid #257;
+      display: inline-block;
+      letter-spacing: .125em;
+      opacity: .85;
+      padding: .125em 0;
+      text-decoration: none;
+      transition: opacity 250ms; }
+      .s-investment__navigation .post-navigation .nav-previous a:hover, .s-investment__navigation .post-navigation .nav-previous a:focus,
+      .s-investment__navigation .post-navigation .nav-next a:hover,
+      .s-investment__navigation .post-navigation .nav-next a:focus {
+        opacity: 1; }
+      .s-investment__navigation .post-navigation .nav-previous a:active,
+      .s-investment__navigation .post-navigation .nav-next a:active {
+        opacity: .7; }
+    .s-investment__navigation .post-navigation .nav-previous a::before {
+      content: '\000ab  '; }
+    .s-investment__navigation .post-navigation .nav-next a::after {
+      content: ' \000bb'; }
+
 /*# sourceMappingURL=style.css.map */

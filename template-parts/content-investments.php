@@ -27,6 +27,12 @@
       </div>
     </header><!-- .c-investment__header -->
 
+    <div class="s-investment__navigation">
+      <div class="o-row">
+        <?php the_post_navigation(); ?>
+      </div>
+    </div>
+
     <div class="o-row c-investment__description">
       <?php the_field( 'investment_description' ); ?>
     </div><!-- .c-investment__description -->

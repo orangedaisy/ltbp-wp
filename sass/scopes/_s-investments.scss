@@ -1,0 +1,33 @@
+// ----------
+//
+// s-investments
+//
+// scope for styles on investment pages that we can't target directly, like the
+// post-to-post navigation bar
+//
+// ----------
+
+.s-investment__navigation {
+  background-color: $c-grey-light;
+  padding: 1.5rem 0;
+
+  .post-navigation {
+    margin-bottom: 0;
+
+    .nav-previous,
+    .nav-next {
+
+      a {
+        @include link-base();
+      }
+    }
+
+    .nav-previous a::before {
+      content: '\000ab  ';
+    }
+
+    .nav-next a::after {
+      content: ' \000bb';
+    }
+  }
+}
