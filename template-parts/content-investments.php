@@ -41,7 +41,7 @@
       <a class="c-button c-button--primary" href="/contact" title="Book a Session">Book a Session</a>
     </div>
 
-    <footer class="o-row c-investment__footer">
+    <footer class="o-row s-investment__footer">
       <?php ltbp_wp_entry_footer(); ?>
     </footer><!-- .c-investment__footer -->
   </article><!-- #post-## -->

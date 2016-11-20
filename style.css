@@ -977,4 +977,19 @@ body:not(.home) .o-site-header {
     .s-investment__navigation .post-navigation .nav-next a::after {
       content: ' \000bb'; }
 
+.s-investment__footer a {
+  border-bottom: 0.063em solid #257;
+  display: inline-block;
+  letter-spacing: .125em;
+  opacity: .85;
+  padding: .125em 0;
+  text-decoration: none;
+  transition: opacity 250ms;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  .s-investment__footer a:hover, .s-investment__footer a:focus {
+    opacity: 1; }
+  .s-investment__footer a:active {
+    opacity: .7; }
+
 /*# sourceMappingURL=style.css.map */
