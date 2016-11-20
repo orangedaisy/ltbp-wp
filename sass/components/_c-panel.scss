@@ -1,0 +1,30 @@
+// ----------
+//
+// c-panel
+//
+// generic container box panel thing
+//
+// ----------
+
+.c-panel {
+  padding: 1rem;
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &--light-grey {
+    background-color: $c-grey-light;
+  }
+
+  &--large {
+    padding: {
+      top: 2.25rem;
+      bottom: 2.25rem;
+    }
+  }
+}

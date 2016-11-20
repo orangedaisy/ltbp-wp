@@ -610,6 +610,15 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -919,6 +928,18 @@ body:not(.home) .o-site-header {
   @media screen and (min-width: 48rem) {
     .c-investment-block:nth-of-type(even) .g-grid--columns {
       align-items: flex-end; } }
+
+.c-panel {
+  padding: 1rem; }
+  .c-panel > *:first-child {
+    margin-top: 0; }
+  .c-panel > *:last-child {
+    margin-bottom: 0; }
+  .c-panel--light-grey {
+    background-color: #e5e5e5; }
+  .c-panel--large {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem; }
 
 /*--------------------------------------------------------------
 # Scopes
