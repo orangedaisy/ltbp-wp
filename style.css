@@ -929,6 +929,28 @@ body:not(.home) .o-site-header {
     .c-investment-block:nth-of-type(even) .g-grid--columns {
       align-items: flex-end; } }
 
+.c-testimonial {
+  margin: 0 auto;
+  padding: 2.25rem 0; }
+  @media screen and (min-width: 48rem) {
+    .c-testimonial {
+      width: 75%; } }
+  .c-testimonial > *:first-child {
+    margin-top: 0; }
+  .c-testimonial > *:last-child {
+    margin-bottom: 0; }
+  .c-testimonial + .c-testimonial {
+    border-top: 1px solid #959595; }
+  .c-testimonial__investment {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: .9rem;
+    letter-spacing: .125em;
+    margin-bottom: .25em;
+    text-transform: uppercase; }
+  .c-testimonial__customer {
+    font-style: italic;
+    opacity: .5; }
+
 .c-panel {
   padding: 1rem; }
   .c-panel > *:first-child {

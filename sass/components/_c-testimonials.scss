@@ -1,0 +1,43 @@
+// ----------
+//
+// c-testimonials
+//
+// styles for our testimonial blocks
+//
+// ----------
+
+.c-testimonial {
+  margin: 0 auto;
+  padding: 2.25rem 0;
+
+  @media screen and (min-width: 48rem) {
+    width: 75%;
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  & + & {
+    border-top: 1px solid $c-grey;
+  }
+
+  &__investment {
+    font: {
+      family: $font__main;
+      size: .9rem;
+    }
+    letter-spacing: .125em;
+    margin-bottom: .25em;
+    text-transform: uppercase;
+  }
+
+  &__customer {
+    font-style: italic;
+    opacity: .5;
+  }
+}
