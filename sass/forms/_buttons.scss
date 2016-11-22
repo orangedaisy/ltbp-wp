@@ -27,6 +27,7 @@ input[type="submit"] {
 
 .c-button {
   @include link-base();
+  background-color: transparent;
   border: .063em solid transparent;
   padding: .75em 1.5em;
   text-transform: uppercase;
