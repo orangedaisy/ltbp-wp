@@ -940,7 +940,7 @@ body:not(.home) .o-site-header {
   .c-testimonial > *:last-child {
     margin-bottom: 0; }
   .c-testimonial + .c-testimonial {
-    border-top: 1px solid #959595; }
+    border-top: 1px solid #e5e5e5; }
   .c-testimonial__investment {
     font-family: "Source Sans Pro", sans-serif;
     font-size: .9rem;
