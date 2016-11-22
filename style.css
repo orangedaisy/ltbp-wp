@@ -881,6 +881,7 @@ body:not(.home) .o-site-header {
       text-align: center; } }
 .c-investment__overview {
   color: #fdfdfd;
+  letter-spacing: .063em;
   margin: 0 auto;
   text-shadow: 0 0 0.063em #050505; }
   @media screen and (min-width: 48rem) {
