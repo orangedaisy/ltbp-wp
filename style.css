@@ -945,6 +945,7 @@ body:not(.home) .o-site-header {
   .c-testimonial__investment {
     font-family: "Source Sans Pro", sans-serif;
     font-size: .9rem;
+    font-weight: 600;
     letter-spacing: .125em;
     margin-bottom: .25em;
     text-transform: uppercase; }
