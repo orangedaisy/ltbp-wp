@@ -10,32 +10,36 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="o-row site-main" role="main">
+		<main id="main" class="site-main" role="main">
 
-		<?php
-		if ( have_posts() ) : ?>
+      <div class="o-row">
+      <?php
+      if ( have_posts() ) : ?>
 
-			<?php
-			/* Start the Loop */
-      while ( have_posts() ) : the_post(); ?>
+        <?php
+        /* Start the Loop */
+        while ( have_posts() ) : the_post(); ?>
 
-      <article class="c-testimonial">
-        <?php if ( get_field( 'testimonial_investment' ) ) : ?>
-          <h6 class="c-testimonial__investment"><?php the_field( 'testimonial_investment' ) ?></h6>
-        <?php endif; ?>
-        <div class="c-testimonial__body">
-          <?php the_field( 'testimonial_body' ); ?>
-        </div>
-        <p class="c-testimonial__customer">&mdash; <?php the_field( 'testimonial_customer' ) ?></p>
-      </article>
+        <article class="c-testimonial">
+          <?php if ( get_field( 'testimonial_investment' ) ) : ?>
+            <h6 class="c-testimonial__investment"><?php the_field( 'testimonial_investment' ) ?></h6>
+          <?php endif; ?>
+          <div class="c-testimonial__body">
+            <?php the_field( 'testimonial_body' ); ?>
+          </div>
+          <p class="c-testimonial__customer">&mdash; <?php the_field( 'testimonial_customer' ) ?></p>
+        </article>
 
-      <?php endwhile; ?>
+        <?php endwhile; ?>
 
-    <?php else :
+      <?php else :
 
-			get_template_part( 'template-parts/content', 'none' );
+        get_template_part( 'template-parts/content', 'none' );
 
-		endif; ?>
+      endif; ?>
+      </div>
+
+    <?php get_template_part( 'template-parts/book-session-block' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

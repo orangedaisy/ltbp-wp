@@ -37,9 +37,7 @@
       <?php the_field( 'investment_description' ); ?>
     </div><!-- .c-investment__description -->
 
-    <div class="c-panel c-panel--light-grey c-panel--large text-center">
-      <a class="c-button c-button--primary" href="/contact" title="Book a Session">Book a Session</a>
-    </div>
+    <?php get_template_part( 'template-parts/book-session-block' ); ?>
 
     <footer class="o-row s-investment__footer">
       <?php ltbp_wp_entry_footer(); ?>
@@ -68,9 +66,6 @@
             </a>
           </p>
         </div>
-        <p>
-          <a class="c-button c-button--white" href="/contact" title="Book a Session">Book a Session</a>
-        </p>
       </div>
     </div>
   </article>

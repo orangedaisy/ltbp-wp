@@ -35,6 +35,8 @@ get_header(); ?>
 
 		endif; ?>
 
+    <?php get_template_part( 'template-parts/book-session-block' ); ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
