@@ -8,9 +8,30 @@
 
 .c-site-nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 1rem .5rem;
+
+  @include bp($breakpoint__second) {
+    align-items: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  &__toggle {
+    display: block;
+
+    &.is-toggled {
+      margin-bottom: 1rem;
+    }
+
+    @include bp($breakpoint__second) {
+      display: none;
+    }
+  }
 
   // unfortunately, due to the unique way wordpress is stupid, we have to do a
   // bit of nesting here. forgive me.
@@ -23,16 +44,34 @@
   }
 
   ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    display: none;
+    align-items: flex-end;
+    flex-direction: column;
     list-style: none;
     margin: 0;
     padding: 0;
+
+    &.is-toggled {
+      display: flex;
+    }
+
+    @include bp($breakpoint__second) {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
   }
 
   li + li {
-    margin-left: .5rem;
+    margin-top: 1rem;
+
+    @include bp($breakpoint__second) {
+      margin: {
+        top: 0;
+        left: .5rem;
+      }
+    }
   }
 
   a:not(.c-site-nav__go-home) {

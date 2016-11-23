@@ -104,7 +104,7 @@ add_action( 'widgets_init', 'ltbp_wp_widgets_init' );
 function ltbp_wp_scripts() {
 	wp_enqueue_style( 'ltbp-wp-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'ltbp-wp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'ltbp-wp-navigation', get_template_directory_uri() . '/js/mobile-nav-toggle.js', array(), '20161122', true );
 
 	wp_enqueue_script( 'ltbp-wp-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

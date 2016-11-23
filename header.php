@@ -58,8 +58,10 @@
 			<?php
 			endif; ?>
 
-      <button class="c-button <?php if ( is_front_page() ) : echo 'c-button--white'; else : echo 'c-button--primary'; endif; ?> c-button--small c-site-nav__toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'ltbp-wp' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'c-site-nav__list' ) ); ?>
+      <div class="c-site-nav__wrapper">
+        <button class="c-button <?php if ( is_front_page() ) : echo 'c-button--white'; else : echo 'c-button--primary'; endif; ?> c-button--small c-site-nav__toggle js-menu-toggle"><?php esc_html_e( 'Menu', 'ltbp-wp' ); ?></button>
+        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'c-site-nav__list js-primary-menu' ) ); ?>
+      </div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
