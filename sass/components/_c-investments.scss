@@ -31,7 +31,7 @@
     margin-top: 0;
     text-shadow: 0 0 .063em $c-black;
 
-    @media screen and (min-width: 48rem) {
+    @include bp($breakpoint__first) {
       font-size: 3.375rem;
       text-align: center;
     }
@@ -43,7 +43,7 @@
     margin: 0 auto;
     text-shadow: 0 0 .063em $c-black;
 
-    @media screen and (min-width: 48rem) {
+    @include bp($breakpoint__first) {
       font: {
         size: 1.25rem;
         weight: 300;
@@ -81,7 +81,7 @@
     letter-spacing: .063em;
     text-shadow: 0 0 .063em $c-black;
 
-    @media screen and (min-width: 48rem) {
+    @include bp($breakpoint__first) {
       width: 50%;
     }
 
@@ -99,13 +99,13 @@
     line-height: 1.125;
     text-shadow: 0 0 .063em $c-black;
 
-    @media screen and (min-width: 48rem) {
+    @include bp($breakpoint__first) {
       font-size: 3.375rem;
     }
   }
 
   &__overview {
-    @media screen and (min-width: 48rem) {
+    @include bp($breakpoint__first) {
       font: {
         size: 1.25rem;
         weight: 300;
@@ -113,7 +113,7 @@
     }
   }
 
-  @media screen and (min-width: 48rem) {
+  @include bp($breakpoint__first) {
     &:nth-of-type(even) .g-grid--columns {
       align-items: flex-end;
     }

@@ -955,7 +955,7 @@ body:not(.home) .o-site-header {
   text-shadow: 0 0 0.063em #454545; }
   @media screen and (min-width: 48rem) {
     .s-homepage h1 {
-      font-size: 3.375rem; } }
+      font-size: 4rem; } }
 
 .s-investment__navigation {
   background-color: #e5e5e5;

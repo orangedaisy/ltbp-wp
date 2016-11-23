@@ -12,8 +12,8 @@
     font-size: 2.25rem;
     text-shadow: 0 0 .063em $c-grey-dark;
 
-    @media screen and (min-width: 48rem) {
-      font-size: 3.375rem;
+    @include bp($breakpoint__first) {
+      font-size: 4rem;
     }
   }
 }
