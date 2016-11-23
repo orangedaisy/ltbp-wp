@@ -76,7 +76,7 @@ add_action( 'after_setup_theme', 'ltbp_wp_setup' );
  * @global int $content_width
  */
 function ltbp_wp_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'ltbp_wp_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'ltbp_wp_content_width', 960 );
 }
 add_action( 'after_setup_theme', 'ltbp_wp_content_width', 0 );
 
