@@ -1,7 +1,4 @@
-button:not(.c-button),
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button:not(.c-button) {
 	border: 1px solid;
 	border-color: $color__border-button;
 	border-radius: 3px;
@@ -25,12 +22,30 @@ input[type="submit"] {
 	}
 }
 
-.c-button {
+.c-button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   @include link-base();
   background-color: transparent;
-  border: .063em solid transparent;
   padding: .75em 1.5em;
   text-transform: uppercase;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  color: $c-accent;
+  border: {
+    top: .063em solid $c-accent;
+    right: .063em solid $c-accent;
+    bottom-color: $c-accent;
+    left: .063em solid $c-accent;
+  }
+}
+
+.c-button {
+  border: .063em solid transparent;
 
   // sizes
   &--large {

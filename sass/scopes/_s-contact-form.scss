@@ -1,0 +1,57 @@
+// ----------
+//
+// s-contact-form
+//
+// styles for our "Book a Session" contact form
+//
+// ----------
+
+form.contact-form {
+
+  label {
+    color: $c-accent;
+    font: {
+      size: .9rem;
+      weight: 600;
+    }
+    letter-spacing: .125em;
+    margin-bottom: .25em;
+    text-transform: uppercase;
+
+    span {
+      font-style: italic;
+      text-transform: lowercase;
+    }
+  }
+
+  input:not([type="submit"]),
+  textarea {
+    background-color: $c-grey-light;
+    border: {
+      color: transparent;
+      radius: 0;
+    }
+    color: $c-accent;
+    margin-bottom: 2.25rem;
+    padding: .5em .75em;
+    transition:
+      background-color 150ms ease-out,
+      color 150ms ease-out;
+
+    &:hover {
+      background-color: darken($c-white, 5%);
+    }
+
+    &:focus,
+    &:active {
+      background-color: $c-white;
+      border-color: $c-accent;
+      color: $c-black;
+    }
+  }
+
+  .contact-submit {
+    margin-bottom: 5.063rem;
+  }
+
+}
