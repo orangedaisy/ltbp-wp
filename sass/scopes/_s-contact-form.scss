@@ -30,7 +30,8 @@ form.contact-form {
   }
 
   input:not([type="submit"]),
-  textarea {
+  textarea,
+  select {
     background-color: $c-grey-light;
     border: {
       color: transparent;
@@ -39,7 +40,6 @@ form.contact-form {
     color: $c-accent;
     margin-bottom: 2.25rem;
     max-width: none;
-    padding: .5em .75em;
     transition:
       background-color 150ms ease-out,
       color 150ms ease-out;
@@ -55,6 +55,26 @@ form.contact-form {
       border-color: $c-accent;
       color: $c-black;
     }
+  }
+
+  input:not([type="submit"]),
+  textarea {
+    padding: .5em .75em;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: {
+      image:
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgba(34, 85, 119, .75)'></polygon></svg>");
+      origin: content-box;
+      position: center right;
+      repeat: no-repeat;
+      size: .5em;
+    }
+    padding: .6em .75em;
   }
 
   .contact-submit {

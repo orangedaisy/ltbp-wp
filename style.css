@@ -1023,25 +1023,41 @@ form.contact-form label {
     font-style: italic;
     text-transform: lowercase; }
 form.contact-form input:not([type="submit"]),
-form.contact-form textarea {
+form.contact-form textarea,
+form.contact-form select {
   background-color: #e5e5e5;
   border-color: transparent;
   border-radius: 0;
   color: #257;
   margin-bottom: 2.25rem;
   max-width: none;
-  padding: .5em .75em;
   transition: background-color 150ms ease-out, color 150ms ease-out;
   width: 100%; }
   form.contact-form input:not([type="submit"]):hover,
-  form.contact-form textarea:hover {
+  form.contact-form textarea:hover,
+  form.contact-form select:hover {
     background-color: #f0f0f0; }
   form.contact-form input:not([type="submit"]):focus, form.contact-form input:not([type="submit"]):active,
   form.contact-form textarea:focus,
-  form.contact-form textarea:active {
+  form.contact-form textarea:active,
+  form.contact-form select:focus,
+  form.contact-form select:active {
     background-color: #fdfdfd;
     border-color: #257;
     color: #050505; }
+form.contact-form input:not([type="submit"]),
+form.contact-form textarea {
+  padding: .5em .75em; }
+form.contact-form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgba(34, 85, 119, .75)'></polygon></svg>");
+  background-origin: content-box;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: .5em;
+  padding: .6em .75em; }
 form.contact-form .contact-submit {
   margin-bottom: 5.063rem;
   text-align: center; }
