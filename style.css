@@ -1009,6 +1009,9 @@ body:not(.home) .o-site-header {
   .s-investment__footer a:active {
     opacity: .7; }
 
+form.contact-form div {
+  margin: 0 auto;
+  max-width: 40rem; }
 form.contact-form label {
   color: #257;
   font-size: .9rem;
@@ -1026,8 +1029,10 @@ form.contact-form textarea {
   border-radius: 0;
   color: #257;
   margin-bottom: 2.25rem;
+  max-width: none;
   padding: .5em .75em;
-  transition: background-color 150ms ease-out, color 150ms ease-out; }
+  transition: background-color 150ms ease-out, color 150ms ease-out;
+  width: 100%; }
   form.contact-form input:not([type="submit"]):hover,
   form.contact-form textarea:hover {
     background-color: #f0f0f0; }
@@ -1038,6 +1043,7 @@ form.contact-form textarea {
     border-color: #257;
     color: #050505; }
 form.contact-form .contact-submit {
-  margin-bottom: 5.063rem; }
+  margin-bottom: 5.063rem;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
