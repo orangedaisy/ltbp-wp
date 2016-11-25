@@ -800,6 +800,8 @@ body:not(.home) .o-site-header {
   .c-site-nav__toggle {
     display: block; }
     .c-site-nav__toggle.is-toggled {
+      background-color: #257;
+      color: #fdfdfd;
       margin-bottom: 1rem; }
     @media screen and (min-width: 58.188rem) {
       .c-site-nav__toggle {

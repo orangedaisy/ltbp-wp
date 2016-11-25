@@ -25,6 +25,8 @@
     display: block;
 
     &.is-toggled {
+      background-color: $c-accent;
+      color: $c-white;
       margin-bottom: 1rem;
     }
 
